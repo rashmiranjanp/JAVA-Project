@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Admin Login</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background: linear-gradient(to right, #8360c3, #2ebf91);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .login-card {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .login-card h2 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+
+        .form-control {
+            border-radius: 6px;
+        }
+
+        .btn-custom {
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .btn-custom:hover {
+            transform: scale(1.03);
+            background-color: #28a745;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-card text-center">
+        <h2><u><i>Admin Login</i></u></h2>
+        <form action="alog" method="post">
+            <div class="mb-3">
+                <input type="text" name="aname" class="form-control" placeholder="Username" required>
+            </div>
+            <div class="mb-4">
+                <input type="password" name="apwd" class="form-control" placeholder="Password" required>
+            </div>
+            <input type="submit" value="Submit" class="btn btn-success btn-custom">
+        </form>
+    </div>
+
+    <!-- Bootstrap 5 JS (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
